@@ -8,5 +8,3 @@ It has the main functionality of chatting with each other in a single room along
 2) Finding out all the nicknames of the people in the room
 3) Logging the chats
 
-# Tasks to be done
-The quit functionality has some bugs, any contribution would be appreciated
