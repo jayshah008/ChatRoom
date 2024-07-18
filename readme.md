@@ -1,19 +1,10 @@
-So when run QUITCHATROOM it does not quit entirely and is still running something.
-Have to find the error in that part.
-The output which could have been fatal is:
-KeyboardInterrupt: 
-Fatal Python error: _enter_buffered_busy: could not acquire lock for <_io.BufferedWriter name='<stdout>'> at interpreter shutdown, possibly due to daemon threads
-Python runtime state: finalizing (tstate=0x0000000103ceeb10)
+# Mutlifunctionality Chatrooom
 
-Current thread 0x00000001fc086080 (most recent call first):
-  <no Python frame>
-zsh: abort      python3 client.py
-jayshah@Jays-MacBook-Air ChatRoom % python3 client.py
-Enter your name: ^CTraceback (most recent call last):
-  File "/Users/jayshah/Documents/Jay/ChatRoom/client.py", line 4, in <module>
-    nickname = input("Enter your name: ")
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^
-KeyboardInterrupt
+This chatroom code makes use of socket programming to allow multiple clients to connect to a single server.
 
+It has the main functionality of chatting with each other in a single room along with the additional functionalities like:-
 
-will have to find what is to be done here.
+1) Sending private messages to other recipients
+2) Finding out all the nicknames of the people in the room
+
+# The quit functionality has some bugs, any contribution would be appreciated
